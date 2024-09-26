@@ -1,9 +1,11 @@
 body {
   font-family: "Inter";
+  font-variant-emoji: text;
 }
+
 .music-player {
   background-color: #f0f0f0;
-  border: 2px solid #333;
+  border: 0px solid #333;
   border-radius: 20px;
   padding: 20px;
   width: 300px;
@@ -12,28 +14,30 @@ body {
 }
 
 .screen {
+  overflow: hidden;
   display: flex;
   flex-direction: column;
   background-color: #ffffff;
   border: 2px solid #333;
   border-radius: 15px;
-  padding: 20px;
-  margin-bottom: 20px;
+  margin-bottom: 0px;
 }
 
 #album-cover {
+  aspect-ratio: 1 / 1;
+  padding: 20px;
   border-radius: 10px;
-  margin-bottom: 10px;
 }
 
 .now-playing {
   font-size: 18px;
-  margin-bottom: 10px;
 }
 
 #artist-name {
+  margin-top: -10px;
   font-size: 14px;
   color: #555;
+  margin-bottom: 30px;
 }
 
 .controls button {
@@ -63,19 +67,19 @@ body {
 
 #seek-bar {
   width: 100%;
-  margin: 15px 0;
+  margin: -2px 0;
   -webkit-appearance: none;
   appearance: none;
-  background: #333;
-  height: 5px;
-  border-radius: 5px;
+  background: #979ca3;
+  height: 15px;
+  border-radius: 0px;
   outline: none;
 }
 
 #seek-bar::-webkit-slider-thumb {
-  width: 15px;
-  height: 15px;
-  border-radius: 50%;
+  width: 5px;
+  height: 25px;
+  border-radius: 0%;
   background: #047aff;
   cursor: pointer;
   -webkit-appearance: none;
@@ -91,9 +95,11 @@ body {
 }
 
 .time-info {
+  padding: 0 10px;
   display: flex;
   justify-content: space-between;
   margin-top: 5px;
+  margin-bottom: 10px;
   font-size: 14px;
 }
 

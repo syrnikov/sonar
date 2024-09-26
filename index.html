@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>iPod Style Music Player</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="music-player">
+      <div class="screen">
+        <img id="album-cover" src="default-cover.png" alt="Album Cover" />
+        <div class="now-playing">
+          <p id="song-title">Select a Song</p>
+          <p id="artist-name">Artist: Unknown</p>
+        </div>
+
+        <!-- Seek Bar -->
+        <input type="range" id="seek-bar" value="0" max="100" />
+
+        <!-- Time Display -->
+        <div class="time-info">
+          <span id="current-time">00:00</span>
+          <span id="total-time">00:00</span>
+        </div>
+
+        <div class="controls">
+          <button id="prev-btn">⏮</button>
+          <button id="play-btn">▶️</button>
+          <button id="pause-btn">⏸</button>
+          <button id="next-btn">⏭</button>
+        </div>
+      </div>
+      <input type="file" id="file-input" accept="audio/*" hidden />
+      <button id="choose-file-btn" class="choose-file-btn">🎵 Add Music</button>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jsmediatags/3.9.5/jsmediatags.min.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>

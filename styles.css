@@ -1,0 +1,103 @@
+body {
+  font-family: "Inter";
+}
+.music-player {
+  background-color: #f0f0f0;
+  border: 2px solid #333;
+  border-radius: 20px;
+  padding: 20px;
+  width: 300px;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+  text-align: center;
+}
+
+.screen {
+  display: flex;
+  flex-direction: column;
+  background-color: #ffffff;
+  border: 2px solid #333;
+  border-radius: 15px;
+  padding: 20px;
+  margin-bottom: 20px;
+}
+
+#album-cover {
+  border-radius: 10px;
+  margin-bottom: 10px;
+}
+
+.now-playing {
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+#artist-name {
+  font-size: 14px;
+  color: #555;
+}
+
+.controls button {
+  background: none;
+  border: none;
+  font-size: 20px;
+  cursor: pointer;
+  margin: 5px;
+}
+
+.controls button:hover {
+  color: #047aff;
+}
+
+.choose-file-btn {
+  background-color: #333;
+  color: #fff;
+  border: none;
+  padding: 10px;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.choose-file-btn:hover {
+  background-color: #047aff;
+}
+
+#seek-bar {
+  width: 100%;
+  margin: 15px 0;
+  -webkit-appearance: none;
+  appearance: none;
+  background: #333;
+  height: 5px;
+  border-radius: 5px;
+  outline: none;
+}
+
+#seek-bar::-webkit-slider-thumb {
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  background: #047aff;
+  cursor: pointer;
+  -webkit-appearance: none;
+  appearance: none;
+}
+
+#seek-bar::-moz-range-thumb {
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  background: #047aff;
+  cursor: pointer;
+}
+
+.time-info {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 5px;
+  font-size: 14px;
+}
+
+#current-time,
+#total-time {
+  color: #555;
+}
